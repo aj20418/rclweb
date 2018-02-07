@@ -16,6 +16,10 @@
 		<h3>How do you sign your team up?</h3>
 		<p><a href="https://docs.google.com/forms/d/e/1FAIpQLSd8zBqqJ4lPtTFSn0TbE_zyenUeh2k7PenefLocIu8xH5fXIw/viewform">Sign up your team here!</a></p>
 	</div>
+		<form action="ns.php">
+  		Sign up for news letters:
+ 	 	<input type="text" name="newsletter"><br>
+		</form>
 	<div id="footer">
 		<footer>
 			Copyright &copy; Royale Challenge League
