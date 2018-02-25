@@ -1,0 +1,36 @@
+body {
+    background-color: #E6E6E6;
+    font-family: Arial, Heveltica, sans-serif;
+}
+
+h1, h3, p {
+    color: #394344;
+}
+
+#footer {
+    color: #394344;
+}
+
+a:link, a:visited {
+    color: black;
+}
+
+#container {
+    background-color: #E6E6E6;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #394344;
+}
+
+#content a {
+    display: block;
+    color: black;
+    text-align: left;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#content a:hover {
+    background-color: #7289D9;
+}
