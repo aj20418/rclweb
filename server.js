@@ -1,10 +1,15 @@
 const express = require('express');
 const app = express();
+const data = require('./data/info.txt')
 
 app.use(express.static('public'));
 
-app.get("/", function (request, response) {
-  response.sendFile(__dirname + '/src/index.html');
+app.get("/", function (req, res) {
+  res.sendFile(__dirname + '/src/index.html');
+});
+
+app.get("/test", function (req, res) {
+  res.send(__dirname + '/src/data.html');
 });
 
 const listener = app.listen(8080, function () {

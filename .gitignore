@@ -1,3 +1,4 @@
 db.sqlite3
 rcl/__pycache__
 app/__pycache__
+bot/config.txt
