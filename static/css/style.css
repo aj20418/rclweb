@@ -23,7 +23,7 @@ a:link, a:visited {
     color: #394344;
 }
 
-#content a {
+#content li a {
     display: block;
     color: black;
     text-align: left;
@@ -31,6 +31,6 @@ a:link, a:visited {
     text-decoration: none;
 }
 
-#content a:hover {
+#content li a:hover {
     background-color: #7289D9;
 }
