@@ -2,3 +2,4 @@ db.sqlite3
 rcl/__pycache__
 app/__pycache__
 app/migrations/__pycache__
+bot/config.txt
