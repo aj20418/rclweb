@@ -8,7 +8,7 @@ app.get("/", function (req, res) {
   res.sendFile('index.html');
 });
 
-app.get("/test", function (req, res) {
+app.get("/", function (req, res) {
   res.sendFile('stylesheet.css');
 });
 
