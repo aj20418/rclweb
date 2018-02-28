@@ -14,3 +14,7 @@ app.get("/test", function (req, res) {
 const listener = app.listen(8080, function () {
   console.log('Listening on port ' + listener.address().port);
 });
+
+setInterval(() => {
+  http.get(`http://${process.env.PROJECT_DOMAIN}.glitch.me/`);
+}, 280000);
