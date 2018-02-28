@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 const http = require('http');
 
-app.use(express.static(__dirname + '/final'));
+app.use(express.static(__dirname + '/templates'));
 
 app.get("/", function (req, res) {
   res.sendFile('index.html');
