@@ -34,7 +34,11 @@ def authorized(ctx):
 
 
 @bot.command()
-async def addteam(ctx, *, name, size: int, wins=0):
+async def addteam(ctx, *, name, size: int, wins=0, rcl=1):
+    '''
+    Add a team to the roster.
+    Manager only command.
+    '''
     def check(m):
         return m.author == ctx.author and m.channel == ctx.message.channel
     if not authorized(ctx):
@@ -45,6 +49,7 @@ async def addteam(ctx, *, name, size: int, wins=0):
             return await ctx.send('Use `!editteam` for this.')
         team = teams[name]
         team['teamSize'] = size
+        team['rcl'] = rcl
         team['members'] = list()
         team['subs'] = list()
         for i in range(size):
