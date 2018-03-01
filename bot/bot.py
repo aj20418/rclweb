@@ -18,7 +18,7 @@ async def on_ready():
     await bot.change_presence(game=discord.Game(name='for RCL!'))
     print('Bot is online!')
 
-with open('config.txt', 'r') as f:
+with open('data/config.txt', 'r') as f:
     token = f.read()
 
 
@@ -34,7 +34,7 @@ def authorized(ctx):
 
 
 @bot.command()
-async def addteam(ctx, *, name, size: int, wins=0, rcl=1):
+async def addteam(ctx, name, size: int, rcl=1, wins=0):
     '''
     Add a team to the roster.
     Manager only command.
