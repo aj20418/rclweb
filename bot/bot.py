@@ -13,7 +13,7 @@ authorized = [
 
 @bot.command()
 async def write(ctx, *, body):
-    if not ctx.author.id in authorized:
+    if ctx.author.id not in authorized:
         return
     with open(filepath, 'r+') as f:
         f.write(body)
