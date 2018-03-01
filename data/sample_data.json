@@ -1,0 +1,19 @@
+{
+    "SA eSports EU": {
+        "name": "SA eSports EU",
+        "teamSize": 7,
+        "wins": 0,
+        "rank": 1
+        "members": [
+            "ButternutJosh",
+            "sheperd40",
+            "Strong",
+            "AntonyJoseph03",
+            "Miracle"
+        ],
+        "subs": [
+            "Boardswap",
+            "amxor"
+        ]
+    }
+}
